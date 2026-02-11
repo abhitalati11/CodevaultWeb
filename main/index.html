@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeVault Web</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="../bg.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <p>CodeVault Web</p>
+    <input type="text" placeholder="Search snippets..." id="searchBar">
+    <button id="addSnippetBtn" onclick="openadd()">Add Snippet</button>
+    <button onclick="clearsnipp()">Clear All snippets</button>
+  </header>
+  <main>
+    <div class="note">
+      <p id="user">Abhi's vault</p>
+      <p id="impnote">** Note - Please reload page one time after saving any snippet **</p>
+    </div>
+    <div class="snippet-grid" id="snippet-grid">
+      <!-- Snippet cards will go here -->
+      <!-- Repeat cards dynamically -->
+    </div>
+    <!-- <div class="msg">
+        <p>Add some snippet to show here</p>
+    </div> -->
+    <div class="modalcontainer">
+      <div class="modal">
+        <h3 id="Dtittle">highest freq </h3>
+        <p class="atts">Language: <label id="Dlang" class="value">Anything</label></p>
+        <p class="atts">Code: 
+          <div id="codeShow">
+            <p id="DcodeShow">Code here</p>
+          </div>
+        </p>
+        <p class="atts">Tags: <label id="Dtags" class="value">python , highest freq</label></p>
+        <div class="btns">
+          <button id="copysnipp">Copy code</button>
+          <button id="closedil">Close</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <p>&#169; All Rights Recived. <a href="../page404.html">
+      Yantram Developers </a> 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

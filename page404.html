@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>404 - Page Not Found</title>
+
+<style>
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Background gradient animation */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#000000);
+    background-size:400% 400%;
+    animation:bgMove 10s ease infinite;
+    color:white;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Card */
+.container{
+    text-align:center;
+    padding:50px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.07);
+    backdrop-filter: blur(15px);
+    box-shadow:0 0 40px rgba(0,0,0,0.6);
+    max-width:500px;
+}
+
+/* Big 404 text */
+.error-code{
+    font-size:120px;
+    font-weight:800;
+    letter-spacing:8px;
+    color:#00eaff;
+    text-shadow:0 0 25px #00eaff;
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-10px)}
+}
+
+h2{
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+p{
+    font-weight:300;
+    opacity:0.8;
+    margin-bottom:30px;
+}
+
+/* Button */
+.btn{
+    padding:12px 28px;
+    border:none;
+    border-radius:30px;
+    background:#00eaff;
+    color:#000;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    background:white;
+}
+
+/* small fake error text for prank */
+.fake{
+    margin-top:20px;
+    font-size:12px;
+    opacity:0.5;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="error-code">404</div>
+    <h2>Page Not Found</h2>
+    <p>Oops! The page you are looking for doesn’t exist or has been moved.</p>
+
+    <button class="btn" onclick="location.reload()">Try Again</button>
+
+    <div class="fake">
+        Error Code: SERVER_TIMEOUT_503 | Connection Refused
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Snippet</title>
+<link rel="stylesheet" href="../main/style.css">
+<link rel="stylesheet" href="add.css">
+</head>
+<body>
+  <p id="impnote">** Note: Please close this page manually after saving snippet **</p>
+  <div class="form-container">
+    <h2>Add New Snippet</h2>
+    <form id="addSnippetForm">
+      <label>Title</label>
+      <input type="text" id="tittle" name="title" required>
+
+      <label>Language</label>
+      <input type="text" id="langs" name="language" required>
+
+      <label>Code</label>
+      <textarea name="code" id="code" rows="6" required></textarea>
+
+      <label>Tags (comma-separated)</label>
+      <input type="text" id="tags" name="tags">
+
+      <div class="form-buttons">
+        <button type="submit" id="saveBtn">Save</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="add.js"></script>
+</body>
+</html>
